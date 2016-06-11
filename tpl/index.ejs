@@ -1,249 +1,251 @@
 <!doctype html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name=viewport content="width=device-width, initial-scale=1">
-    <title>One</title>
-    <link rel="stylesheet" href="css.css">
-	<link rel ="stylesheet" href="font-awesome.min.css">
-	<link rel ="stylesheet" href="buttons.css">
-</head>
-<body>
-	<!--<header></header>-->
-	<section id="landing">
-		<div id="landing_text">
-			Text
-		</div>
-		<div id="landing_search">
-			<div>
-				<input name="input" id="typeahead">
+	<head>
+		<meta charset="utf-8">
+		<meta name=viewport content="width=device-width, initial-scale=1">
+		<title>One</title>
+		<link rel="stylesheet" href="css.css">
+		<link rel ="stylesheet" href="font-awesome.min.css">
+		<link rel ="stylesheet" href="buttons.css">
+	</head>
+	<body>
+		<!--<header></header>-->
+		<section id="landing">
+			<div id="landing_text">
+				Text
 			</div>
-			<div>
-				<button class="button button-3d button-royal button-rounded" id="landing_page_button">Go</button>
-			</div>
-		</div>
-	</section>
-	<section id="window_main" style="display:none">
-		<div id="location">
-			<header>
-				<span class="window_changer current" data-parent="location">Location</span>
-				<span class="window_changer" data-parent="flights">Flights</span>
-				<span class="window_changer" data-parent="hotels">Hotels</span>
-			</header>
-			<div class="helper-text">Choose a location</div>
-			<div class="inside-main is-loading" id="location-main">
-				<div class="location-item">
-					<img src="../image.jpg">
-					<div>
-						<span>Los Angeles,CA</span>
-						<span>Desc</span>
-						<span>Links</span>
-					</div>
+			<div id="landing_search">
+				<div>
+					<input name="input" id="typeahead">
 				</div>
-				<div class="location-item">
-					<img src="../new-york-city.jpg">
-					<div>
-						<span>Name</span>
-						<span>Desc</span>
-						<span>Links</span>
-					</div>
-				</div>
-				<div class="location-item">
-					<img src="../image.jpg">
-					<div>
-						<span>Name</span>
-						<span>Desc</span>
-						<span>Links</span>
-					</div>
-				</div>
-				<div class="location-item">
-					<img src="../image.jpg">
-					<div>
-						<span>Name</span>
-						<span>Desc</span>
-						<span>Links</span>
-					</div>
-				</div>
-				<div class="location-item">
-					<img src="../image.jpg">
-					<div>
-						<span>Name</span>
-						<span>Desc</span>
-						<span>Links</span>
-					</div>
-				</div>
-				<div class="location-item">
-					<img src="../image.jpg">
-					<div>
-						<span>Name</span>
-						<span>Desc</span>
-						<span>Links</span>
-					</div>
-				</div>
-				<div class="location-item">
-					<img src="../image.jpg">
-					<div>
-						<span>Name</span>
-						<span>Desc</span>
-						<span>Links</span>
-					</div>
+				<div>
+					<button class="button button-3d button-royal button-rounded" id="landing_page_button">Go</button>
 				</div>
 			</div>
-		</div>
-		<div id="flights" style="display:none">
-			<header>
-				<span class="window_changer" data-parent="location">Location</span>
-				<span class="window_changer current" data-parent="flights">Flights</span>
-				<span class="window_changer" data-parent="hotels">Hotels</span>
-			</header>
-			<div class="helper-text">Choose a flight</div>
-			<div class="inside-main" id="location-main">
-				<div class="location-item2">
-					<div class="small-icons">
-						<i class="fa fa-plane" aria-hidden="true"></i>
-						<span>LAX - JFK</span>
+		</section>
+		<section id="window_main" style="display:none">
+			<div id="location">
+				<header>
+					<span class="window_changer current" data-parent="location">Location</span>
+					<span class="window_changer" data-parent="flights">Flights</span>
+					<span class="window_changer" data-parent="hotels">Hotels</span>
+				</header>
+				<div class="helper-text">Choose a location</div>
+				<div class="inside-main is-loading" id="location-main">
+					<div class="location-item">
+						<img src="../image.jpg">
+						<div>
+							<span>Los Angeles,CA</span>
+							<span>Desc</span>
+							<span>Links</span>
+						</div>
 					</div>
-					<div class="flight-info">
-						<span>June 22 11:05 June 22, 2016 19:05</span>
-						<span>Duration : 8hours</span>
-						<span>American Airlines Flight No AA105</span>
-						<span>Price: $125 (inc. of all taxes)</span>
+					<div class="location-item">
+						<img src="../new-york-city.jpg">
+						<div>
+							<span>Name</span>
+							<span>Desc</span>
+							<span>Links</span>
+						</div>
 					</div>
-				</div>
-				<div class="location-item2">
-					<div class="small-icons">
-						<i class="fa fa-plane" aria-hidden="true"></i>
-						<i class="fa fa-plane" aria-hidden="true"></i>
+					<div class="location-item">
+						<img src="../image.jpg">
+						<div>
+							<span>Name</span>
+							<span>Desc</span>
+							<span>Links</span>
+						</div>
 					</div>
-					<div>
-						<span>Name</span>
-						<span>Desc</span>
-						<span>Links</span>
+					<div class="location-item">
+						<img src="../image.jpg">
+						<div>
+							<span>Name</span>
+							<span>Desc</span>
+							<span>Links</span>
+						</div>
 					</div>
-				</div>
-				<div class="location-item2">
-					<div class="small-icons">
-						<i class="fa fa-plane" aria-hidden="true"></i>
-						<i class="fa fa-plane" aria-hidden="true"></i>
+					<div class="location-item">
+						<img src="../image.jpg">
+						<div>
+							<span>Name</span>
+							<span>Desc</span>
+							<span>Links</span>
+						</div>
 					</div>
-					<div>
-						<span>Name</span>
-						<span>Desc</span>
-						<span>Links</span>
+					<div class="location-item">
+						<img src="../image.jpg">
+						<div>
+							<span>Name</span>
+							<span>Desc</span>
+							<span>Links</span>
+						</div>
 					</div>
-				</div>
-				<div class="location-item2">
-					<div class="small-icons">
-						<i class="fa fa-plane" aria-hidden="true"></i>
-						<i class="fa fa-plane" aria-hidden="true"></i>
-					</div>
-					<div>
-						<span>Name</span>
-						<span>Desc</span>
-						<span>Links</span>
-					</div>
-				</div>
-				<div class="location-item2">
-					<div class="small-icons">
-						<i class="fa fa-plane" aria-hidden="true"></i>
-						<i class="fa fa-plane" aria-hidden="true"></i>
-					</div>
-					<div>
-						<span>Name</span>
-						<span>Desc</span>
-						<span>Links</span>
+					<div class="location-item">
+						<img src="../image.jpg">
+						<div>
+							<span>Name</span>
+							<span>Desc</span>
+							<span>Links</span>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div id="hotels" style="display:none">
-			<header>
-				<span class="window_changer" data-parent="location">Location</span>
-				<span class="window_changer" data-parent="flights">Flights</span>
-				<span class="window_changer current" data-parent="hotels">Hotels</span>
-			</header>
-			<div class="helper-text">Choose a hotel</div>
-			<div class="inside-main" id="location-main"></div>
-		</div>
-	</section>
-	<script src="../jquery.js"></script>
-	<script src="../typeahead.js"></script>
-	<script>
-		var substringMatcher = function(strs) {
-		  return function findMatches(q, cb) {
-			var matches, substringRegex;
-
-			// an array that will be populated with substring matches
-			matches = [];
-
-			// regex used to determine if a string contains the substring `q`
-			substrRegex = new RegExp(q, 'i');
-
-			// iterate through the pool of strings and for any string that
-			// contains the substring `q`, add it to the `matches` array
-			$.each(strs, function(i, str) {
-			  if (substrRegex.test(str)) {
-				matches.push(str);
-			  }
-			});
-
-			cb(matches);
-		  };
-		};
-
-		var states = ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California',
-		  'Colorado', 'Connecticut', 'Delaware', 'Florida', 'Georgia', 'Hawaii',
-		  'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana',
-		  'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota',
-		  'Mississippi', 'Missouri', 'Montana', 'Nebraska', 'Nevada', 'New Hampshire',
-		  'New Jersey', 'New Mexico', 'New York', 'North Carolina', 'North Dakota',
-		  'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island',
-		  'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont',
-		  'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming'
-		];
-
-		$('#typeahead').typeahead({
-		  hint: true,
-		  highlight: true,
-		  minLength: 1
-		},
-		{
-		  name: 'states',
-		  source: substringMatcher(states)
-		});
-	</script>
-	<script>
-		function nit(){
-				function mainCardChanger(className){
-					var current = "location";
-					var listOfAnchors = document.getElementsByClassName(className);
-					for(var i=0;i<listOfAnchors.length;i++){
-						listOfAnchors[i].addEventListener('click',changer);
-					}
-					function changer(e){
-						var toBeHidden = document.getElementById(current);
-						var toBeShown = document.getElementById(this.dataset.parent);
-						if(toBeHidden !== toBeShown){
-							current = this.dataset.parent;
-							toBeHidden.style.display = "none";
-							toBeShown.style.display = "block";
-						}
-					}
+			<div id="flights" style="display:none">
+				<header>
+					<span class="window_changer" data-parent="location">Location</span>
+					<span class="window_changer current" data-parent="flights">Flights</span>
+					<span class="window_changer" data-parent="hotels">Hotels</span>
+				</header>
+				<div class="helper-text">Choose a flight</div>
+				<div class="inside-main" id="location-main">
+					<div class="location-item2">
+						<div class="small-icons">
+							<i class="fa fa-plane" aria-hidden="true"></i>
+							<span>LAX - JFK</span>
+						</div>
+						<div class="flight-info">
+							<span>June 22 11:05 June 22, 2016 19:05</span>
+							<span>Duration : 8hours</span>
+							<span>American Airlines Flight No AA105</span>
+							<span>Price: $125 (inc. of all taxes)</span>
+						</div>
+					</div>
+					<div class="location-item2">
+						<div class="small-icons">
+							<i class="fa fa-plane" aria-hidden="true"></i>
+							<i class="fa fa-plane" aria-hidden="true"></i>
+						</div>
+						<div>
+							<span>Name</span>
+							<span>Desc</span>
+							<span>Links</span>
+						</div>
+					</div>
+					<div class="location-item2">
+						<div class="small-icons">
+							<i class="fa fa-plane" aria-hidden="true"></i>
+							<i class="fa fa-plane" aria-hidden="true"></i>
+						</div>
+						<div>
+							<span>Name</span>
+							<span>Desc</span>
+							<span>Links</span>
+						</div>
+					</div>
+					<div class="location-item2">
+						<div class="small-icons">
+							<i class="fa fa-plane" aria-hidden="true"></i>
+							<i class="fa fa-plane" aria-hidden="true"></i>
+						</div>
+						<div>
+							<span>Name</span>
+							<span>Desc</span>
+							<span>Links</span>
+						</div>
+					</div>
+					<div class="location-item2">
+						<div class="small-icons">
+							<i class="fa fa-plane" aria-hidden="true"></i>
+							<i class="fa fa-plane" aria-hidden="true"></i>
+						</div>
+						<div>
+							<span>Name</span>
+							<span>Desc</span>
+							<span>Links</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="hotels" style="display:none">
+				<header>
+					<span class="window_changer" data-parent="location">Location</span>
+					<span class="window_changer" data-parent="flights">Flights</span>
+					<span class="window_changer current" data-parent="hotels">Hotels</span>
+				</header>
+				<div class="helper-text">Choose a hotel</div>
+				<div class="inside-main" id="location-main"></div>
+			</div>
+		</section>
+		<script src="../jquery.js"></script>
+		<script src="../typeahead.js"></script>
+		<script>
+			var substringMatcher = function(strs) {
+			return function findMatches(q, cb) {
+				var matches, substringRegex;
+				// an array that will be populated with substring matches
+				matches = [];
+				// regex used to determine if a string contains the substring `q`
+				substrRegex = new RegExp(q, 'i');
+				// iterate through the pool of strings and for any string that
+				// contains the substring `q`, add it to the `matches` array
+				$.each(strs, function(i, str) {
+				if (substrRegex.test(str)) {
+					matches.push(str);
 				}
-				mainCardChanger("window_changer");
-				var btn = document.getElementById('landing_page_button');
-				btn.addEventListener('click',function(){
-					var hideKaro = document.getElementById("landing");
-					var dikhao = document.getElementById("window_main");
-					document.body.classList.add('is-loading2');
-					hideKaro.style.display = "none";
-					var toid = window.setTimeout(function(){
-						dikhao.style.display = "flex";
-						document.body.classList.remove('is-loading2');
-					},1500);
 				});
-			}
-		window.addEventListener('load',nit);		
-	</script>
-</body>
-</html>
+				cb(matches);
+			};
+			};
+			var states = ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California',
+			'Colorado', 'Connecticut', 'Delaware', 'Florida', 'Georgia', 'Hawaii',
+			'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana',
+			'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota',
+			'Mississippi', 'Missouri', 'Montana', 'Nebraska', 'Nevada', 'New Hampshire',
+			'New Jersey', 'New Mexico', 'New York', 'North Carolina', 'North Dakota',
+			'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island',
+			'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont',
+			'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming'
+			];
+			$('#typeahead').typeahead({
+			hint: true,
+			highlight: true,
+			minLength: 1
+			},
+			{
+			name: 'states',
+			source: substringMatcher(states)
+			});
+		</script>
+		<script>
+			function nit(){
+					function mainCardChanger(className){
+						var current = "location";
+						var listOfAnchors = document.getElementsByClassName(className);
+						for(var i=0;i<listOfAnchors.length;i++){
+								listOfAnchors[i].addEventListener('click',changer);
+							}
+							function changer(e){
+								var toBeHidden = document.getElementById(current);
+								var toBeShown = document.getElementById(this.dataset.parent);
+								if(toBeHidden !== toBeShown){
+									current = this.dataset.parent;
+									toBeHidden.style.display = "none";
+									toBeShown.style.display = "block";
+								}
+							}
+						}
+						mainCardChanger("window_changer");
+						var btn = document.getElementById('landing_page_button');
+						btn.addEventListener('click',function(){
+							var hideKaro = document.getElementById("landing");
+							var dikhao = document.getElementById("window_main");
+							document.body.classList.add('is-loading2');
+							hideKaro.style.display = "none";
+							var toid = window.setTimeout(function(){
+								dikhao.style.display = "flex";
+								document.body.classList.remove('is-loading2');
+							},1500);
+						});
+					}
+						window.addEventListener('load',nit);
+			</script>
+			<script type="text/javascript" src="jquery-2.2.1.js"></script>
+			<script type="text/javascript">
+			setTimeout(function(){
+				$.post('http://localhost:3700/location',{random:'data'},function(res){
+				console.log(res);
+			});
+			},1000);
+			</script>
+		</body>
+	</html>
