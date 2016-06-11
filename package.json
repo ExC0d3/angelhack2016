@@ -2,6 +2,7 @@
   "name": "audio-record",
   "version": "0.0.0",
   "description": "Stream microphone pcm data to server and save on wav file.",
+  "repository":"git@github.com:ExC0d3/angelhack2016.git",
   "scripts": {
     "start": "nodemon app.js"
   },
