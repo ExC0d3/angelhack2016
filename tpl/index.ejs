@@ -1,22 +1,74 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name=viewport content="width=device-width, initial-scale=1">
-		<title>One</title>
-		<link rel="stylesheet" href="css.css">
-		<link rel ="stylesheet" href="font-awesome.min.css">
-		<link rel ="stylesheet" href="buttons.css">
-	</head>
-	<body>
-		<!--<header></header>-->
-		<section id="landing">
-			<div id="landing_text">
-				Text
+<head>
+	<meta charset="utf-8">
+	<meta name=viewport content="width=device-width, initial-scale=1">
+    <title>One</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel ="stylesheet" href="font-awesome.min.css">
+	<link rel ="stylesheet" href="buttons.css">
+</head>
+<body>
+	<!--<header></header>-->
+	<section id="landing">
+		<div id="landing_text">
+			<p>Some random shit !</p>
+		</div>
+		<div id="landing_search">
+			<!-- <div> -->
+				<!-- <input name="input" id="typeahead"> -->
+			<div class="input-group input-group-lg">
+				<input type="text" class="form-control" placeholder="Enter text" aria-describedby="basic-addon2">
 			</div>
-			<div id="landing_search">
-				<div>
-					<input name="input" id="typeahead">
+			<!-- </div> -->
+			<!-- <div> -->
+				<!-- <button class="button button-3d button-royal button-rounded" id="landing_page_button">Go</button> -->
+			<!-- </div> -->
+			<button class="btn btn-default" id="landing_page_button" type="submit">Submit</button>
+
+		</div>
+	</section>
+	<section id="window_main" style="display:none">
+		<div id="location">
+			<header>
+				<span class="window_changer current" data-parent="location">Location</span>
+				<span class="window_changer" data-parent="flights">Flights</span>
+				<span class="window_changer" data-parent="hotels">Hotels</span>
+			</header>
+			<div class="helper-text">Choose a location</div>
+			<div class="inside-main is-loading" id="location-main">
+				<div class="location-item">
+					<img src="../image.jpg">
+					<div>
+						<span>Los Angeles,CA</span>
+						<span>Desc</span>
+						<span>Links</span>
+					</div>
+				</div>
+				<div class="location-item">
+					<img src="../new-york-city.jpg">
+					<div>
+						<span>Name</span>
+						<span>Desc</span>
+						<span>Links</span>
+					</div>
+				</div>
+				<div class="location-item">
+					<img src="../image.jpg">
+					<div>
+						<span>Name</span>
+						<span>Desc</span>
+						<span>Links</span>
+					</div>
+				</div>
+				<div class="location-item">
+					<img src="../image.jpg">
+					<div>
+						<span>Name</span>
+						<span>Desc</span>
+						<span>Links</span>
+					</div>
 				</div>
 				<div>
 					<button class="button button-3d button-royal button-rounded" id="landing_page_button">Go</button>
