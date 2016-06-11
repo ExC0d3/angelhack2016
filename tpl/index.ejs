@@ -5,6 +5,7 @@
 	<meta name=viewport content="width=device-width, initial-scale=1">
     <title>One</title>
     <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
 	<link rel ="stylesheet" href="font-awesome.min.css">
 	<link rel ="stylesheet" href="buttons.css">
 </head>
@@ -12,15 +13,20 @@
 	<!--<header></header>-->
 	<section id="landing">
 		<div id="landing_text">
-			Text
+			<p>Some random shit !</p>
 		</div>
 		<div id="landing_search">
-			<div>
-				<input name="input" id="typeahead">
+			<!-- <div> -->
+				<!-- <input name="input" id="typeahead"> -->
+			<div class="input-group input-group-lg">
+				<input type="text" class="form-control" placeholder="Enter text" aria-describedby="basic-addon2">
 			</div>
-			<div>
-				<button class="button button-3d button-royal button-rounded" id="landing_page_button">Go</button>
-			</div>
+			<!-- </div> -->
+			<!-- <div> -->
+				<!-- <button class="button button-3d button-royal button-rounded" id="landing_page_button">Go</button> -->
+			<!-- </div> -->
+			<button class="btn btn-default" id="landing_page_button" type="submit">Submit</button>
+
 		</div>
 	</section>
 	<section id="window_main" style="display:none">
