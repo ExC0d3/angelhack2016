@@ -1,5 +1,6 @@
 var express = require('express');
 var bodyParser = require('body-parser');
+var logger = require('morgan');
 var BinaryServer = require('binaryjs').BinaryServer;
 var fs = require('fs');
 var wav = require('wav');
@@ -11,6 +12,7 @@ var app = express();
 app.set('views', __dirname + '/tpl');
 app.set('view engine', 'ejs');
 app.engine('ejs', require('ejs').__express);
+app.use(logger('dev'));
 app.use(express.static(__dirname + '/public'))
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:false}));
@@ -22,7 +24,17 @@ app.get('/', function(req, res){
 
 app.post('/location',function(req,res){
   console.log(JSON.parse(JSON.stringify(req.body)));
-  res.send('oh yeah');
+  res.send('http://localhost:3700/plans');
+});
+
+app.get('/plans',function(req,res){
+  console.log('data on get');
+  res.render('second');
+});
+
+app.post('/plans',function(req,res){
+  console.log('data on post');
+  res.render('second');
 });
 
 app.listen(port);

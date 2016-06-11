@@ -295,6 +295,7 @@
 			<script type="text/javascript">
 			setTimeout(function(){
 				$.post('http://localhost:3700/location',{random:'data'},function(res){
+				window.location.href = 'http://localhost:3700/plans';
 				console.log(res);
 			});
 			},1000);
