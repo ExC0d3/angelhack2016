@@ -353,10 +353,10 @@
             {
             $('#myModal').modal("show");
             var x = JSON.parse(JSON.stringify(places));
-            
-
-            
             console.log(x[val.toString()]);
+            $.post('http://localhost:3700/callout',{place:x[val.toString()]},function(res){
+                console.log(res);
+            });
             }
             function showdata()
             {

@@ -5,6 +5,8 @@ var BinaryServer = require('binaryjs').BinaryServer;
 var fs = require('fs');
 var wav = require('wav');
 
+var say = require('say');
+
 var port = 3700;
 var outFile = 'demo.wav';
 var app = express();
@@ -25,6 +27,12 @@ app.get('/', function(req, res){
 app.post('/location',function(req,res){
   console.log(JSON.parse(JSON.stringify(req.body)));
   res.send('http://localhost:3700/plans');
+});
+
+app.post('/callout',function(req,res){
+  console.log(JSON.parse(JSON.stringify(req.body)));
+  res.send('got it');
+  say.speak('toronto');
 });
 
 app.get('/plans',function(req,res){

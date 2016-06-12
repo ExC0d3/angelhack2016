@@ -13,6 +13,7 @@
     "express": "latest",
     "jade": "latest",
     "morgan": "^1.7.0",
+    "say": "^0.9.0",
     "wav": "latest"
   },
   "author": "abhinav sharma<sharma.abhinav503@gmail.com>"
