@@ -6,6 +6,9 @@
     body { margin:0; padding:0; }
     #map { position:absolute; top:0; bottom:0; width:100%; }
     </style>
+    <script type="text/javascript">
+    </script>
+
 </head>
 <body>
     <style>
@@ -67,25 +70,25 @@
         </nav>
         <!-- Header -->
         <header id="top" class="header">
-            
+
             <div class="text-vertical-center" id="start">
                 <h1>Destinify</h1>
-                <h3>Travell with a click</h3>
+                <h3>Travel with a click</h3>
                 <br>
                 <a onclick="start()" id="start-btn" class="btn btn-dark btn-lg">Take Me Somewhere</a>
             </div>
-            
+
             <div id="map"></map>
                 <div  class="text-vertical-center container" style="display:none;">
-                    
-                    
+
+
                     <!--<div id="map">-->
-                    
+
                 </div>
-                
-                
+
+
             </header>
-            
+
             <style type="text/css">
             div.list-group-item {
             height:auto;
@@ -103,8 +106,69 @@
             width: 1265PX;
             }
             }
+
+
+            .loader,
+.loader:before,
+.loader:after {
+ background: #ffffff;
+ -webkit-animation: load1 1s infinite ease-in-out;
+ animation: load1 1s infinite ease-in-out;
+ width: 1em;
+ height: 4em;
+}
+.loader:before,
+.loader:after {
+ position: absolute;
+ top: 0;
+ content: '';
+}
+.loader:before {
+ left: -1.5em;
+ -webkit-animation-delay: -0.32s;
+ animation-delay: -0.32s;
+}
+.loader {
+ color: #000;
+ text-indent: -9999em;
+ margin: 88px auto;
+ position: relative;
+ font-size: 11px;
+ -webkit-transform: translateZ(0);
+ -ms-transform: translateZ(0);
+ transform: translateZ(0);
+ -webkit-animation-delay: -0.16s;
+ animation-delay: -0.16s;
+}
+.loader:after {
+ left: 1.5em;
+}
+@-webkit-keyframes load1 {
+ 0%,
+ 80%,
+ 100% {
+   box-shadow: 0 0;
+   height: 4em;
+ }
+ 40% {
+   box-shadow: 0 -2em;
+   height: 5em;
+ }
+}
+@keyframes load1 {
+ 0%,
+ 80%,
+ 100% {
+   box-shadow: 0 0;
+   height: 4em;
+ }
+ 40% {
+   box-shadow: 0 -2em;
+   height: 5em;
+ }
+}
             </style>
-            
+
             <div id="myModal" class="modal fade" role="dialog">
                 <div class="modal-dialog modal-lg">
                     <!-- Modal content-->
@@ -115,92 +179,16 @@
                         </div>
                         <div class="modal-body">
                             <div class="row">
-                                
+
                                 <div class="list-group">
-                                    <div href="#" class="list-group-item">
-                                        <div class="media col-md-3">
-                                            <figure class="pull-left">
-                                                <img class="media-object img-rounded img-responsive"  src="http://placehold.it/350x250" alt="placehold.it/350x250" >
-                                            </figure>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <h4 class="list-group-item-heading"> List group heading </h4>
-                                            <p class="list-group-item-text"> Qui diam libris ei, vidisse incorrupte at mel. His euismod salutandi dissentiunt eu. Habeo offendit ea mea. Nostro blandit sea ea, viris timeam molestiae an has. At nisl platonem eum.
-                                                Vel et nonumy gubergren, ad has tota facilis probatus. Ea legere legimus tibique cum, sale tantas vim ea, eu vivendo expetendis vim. Voluptua vituperatoribus et mel, ius no elitr deserunt mediocrem. Mea facilisi torquatos ad.
-                                            </p>
-                                        </div>
-                                        <div class="col-md-3 text-center">
-                                            <h2> 14240 <small> votes </small></h2>
-                                            <button type="button" class="btn btn-default btn-lg btn-block" data-toggle="collapse" data-target="#show-data" onclick="showdata()"> SELECT</button>
-                                            <div class="stars">
-                                                <span class="glyphicon glyphicon-star"></span>
-                                                <span class="glyphicon glyphicon-star"></span>
-                                                <span class="glyphicon glyphicon-star"></span>
-                                                <span class="glyphicon glyphicon-star"></span>
-                                                <span class="glyphicon glyphicon-star-empty"></span>
-                                            </div>
-                                            <p> Average 4.5 <small> / </small> 5 </p>
-                                        </div>
-                                    </div>
-                                    <div href="#" class=" collapse" id="show-data" >
-                                        
-                                        asbkdbkabsdbaksbdkabsdkbkbaskdbkabskdbaksbdkbaskdbkabsdkjb
-                                    </div>
-                                    
-                                    <div href="#" class="list-group-item">
-                                        <div class="media col-md-3">
-                                            <figure class="pull-left">
-                                                <img class="media-object img-rounded img-responsive" src="http://placehold.it/350x250" alt="placehold.it/350x250" >
-                                            </figure>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <h4 class="list-group-item-heading"> List group heading </h4>
-                                            <p class="list-group-item-text"> Eu eum corpora torquatos, ne postea constituto mea, quo tale lorem facer no. Ut sed odio appetere partiendo, quo meliore salutandi ex. Vix an sanctus vivendo, sed vocibus accumsan petentium ea.
-                                                Sed integre saperet at, no nec debet erant, quo dico incorrupte comprehensam ut. Et minimum consulatu ius, an dolores iracundia est, oportere vituperata interpretaris sea an. Sed id error quando indoctum, mel suas saperet at.
-                                            </p>
-                                        </div>
-                                        <div class="col-md-3 text-center">
-                                            <h2> 12424 <small> votes </small></h2>
-                                            <button type="button" class="btn btn-primary btn-lg btn-block">Vote Now!</button>
-                                            <div class="stars">
-                                                <span class="glyphicon glyphicon-star"></span>
-                                                <span class="glyphicon glyphicon-star"></span>
-                                                <span class="glyphicon glyphicon-star"></span>
-                                                <span class="glyphicon glyphicon-star"></span>
-                                                <span class="glyphicon glyphicon-star-empty"></span>
-                                            </div>
-                                            <p> Average 3.9 <small> / </small> 5 </p>
-                                        </div>
-                                    </div>
-                                    <div href="#" class="list-group-item">
-                                        <div class="media col-md-3">
-                                            <figure class="pull-left">
-                                                <img class="media-object img-rounded img-responsive" src="http://placehold.it/350x250" alt="placehold.it/350x250">
-                                            </figure>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <h4 class="list-group-item-heading"> List group heading </h4>
-                                            <p class="list-group-item-text"> Ut mea viris eripuit theophrastus, cu ponderum accusata consequuntur cum. Suas quaestio cotidieque pro ea. Nam nihil persecuti philosophia id, nam quot populo ea.
-                                                Falli urbanitas ei pri, eu est enim volumus, mei no volutpat periculis. Est errem iudicabit cu. At usu vocibus officiis, ad ius eros tibique appellantur.
-                                            </p>
-                                        </div>
-                                        <div class="col-md-3 text-center">
-                                            <h2> 13540 <small> votes </small></h2>
-                                            <button type="button" class="btn btn-primary btn-lg btn-block">Vote Now!</button>
-                                            <div class="stars">
-                                                <span class="glyphicon glyphicon-star"></span>
-                                                <span class="glyphicon glyphicon-star"></span>
-                                                <span class="glyphicon glyphicon-star"></span>
-                                                <span class="glyphicon glyphicon-star"></span>
-                                                <span class="glyphicon glyphicon-star-empty"></span>
-                                            </div>
-                                            <p> Average 4.1 <small> / </small> 5 </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                
+
+
+
+
+                                 </div>
+
                                 <div class="col-md-2"></div>
-                                
+
                             </div>
                         </div>
                         <div class="modal-footer">
@@ -209,119 +197,151 @@
                     </div>
                 </div>
             </div>
+
+               <div id="myModal2" class="modal fade" role="dialog">
+                <div class="modal-dialog modal-lg">
+                    <!-- Modal content-->
+                    <div class="modal-content text-center">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title text-center">Select Best Hotels</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+
+                                <div class="list-group2">
+
+
+
+
+                                 </div>
+
+                                <div class="col-md-2"></div>
+
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
             <script type="text/javascript">
 
                 var places = {
-            1:'place1',
-            2:'place2',
-            3:'place3',
-            4:'place4',
+            1:'SFO',
+            2:'SJC',
+            3:'CDG',
+            4:'YYZ',
             };
-            
+
 
             function start()
             {
-            $('#start-btn').html("Processing Data....");
-            
-            setTimeout(function(){
-            $('#start').addClass("animated fadeOutUp").delay(2000);
-            $('#start').hide();
-            $('#data-section').show();
-            $('#data-section').addClass("animated fadeInDown");
-            var lat=[37.7749,48.8566,37.3861,40.7128 ];
-            var long=[122.4194,2.3532,122.0839,74.0059 ];
+                $('#start-btn').html("Processing Data....");
 
-            mapboxgl.accessToken = 'pk.eyJ1Ijoibml0aW4xMjMiLCJhIjoiNTMwZmUzNTQ1NzRkYmY4OTE1MjJkOTNhNmRlMGE4ZDYifQ.IYlLXR8kgPwt137K_x7Nzg';
-            var markers = {
-            "type":"FeatureCollection",
-            "features":[
-            {
-            "type":"Feature",
-            "properties": {
-            "description": "<div class=\"marker-title\">Make it Mount Pleasant</div><p><a href=\"http://www.mtpleasantdc.com/makeitmtpleasant\" target=\"_blank\" title=\"Opens in a new window\">Make it Mount Pleasant</a> is a handmade and vintage market and afternoon of live entertainment and kids activities. 12:00-6:00 p.m.</p> <button onclick=\"afterlocation(1)\">Show Location</button>",
-            "marker-symbol": "star",
-            "marker-size":"large",
-            "marker-color":"#faaf34"
-            },
-            "geometry":{
-            "type":"Point",
-            "coordinates":[lat[0],long[0]]
-            }
-            
-            },
-            {
-            "type":"Feature",
-            "properties": {
-            "description": "<div class=\"marker-title\">Make it Mount Pleasant</div><p><a href=\"http://www.mtpleasantdc.com/makeitmtpleasant\" target=\"_blank\" title=\"Opens in a new window\">Make it Mount Pleasant</a> is a handmade and vintage market and afternoon of live entertainment and kids activities. 12:00-6:00 p.m.</p>",
-            "marker-symbol": "star",
-            "marker-size":"large",
-            "marker-color":"#faaf34"
-            },
-            "geometry":{
-            "type":"Point",
-            "coordinates":[lat[1],long[1]]
-            }
-            },
-            {
-            "type":"Feature",
-            "geometry":{
-            "type":"Point",
-            "coordinates":[lat[2],long[2]]
-            },
-            "properties": {
-            "description": "<div class=\"marker-title\">Make it Mount Pleasant</div><p><a href=\"http://www.mtpleasantdc.com/makeitmtpleasant\" target=\"_blank\" title=\"Opens in a new window\">Make it Mount Pleasant</a> is a handmade and vintage market and afternoon of live entertainment and kids activities. 12:00-6:00 p.m.</p> <button onclick=\"afterlocation(2)\">Show Location</button>",
-            "marker-symbol": "star",
-            "marker-size":"large",
-            "marker-color":"#faaf34"
-            }
-            
-            },
-            {
-            "type":"Feature",
-            "properties": {
-            "description": "<div class=\"marker-title\">Make it Mount Pleasant</div><p><a href=\"http://www.mtpleasantdc.com/makeitmtpleasant\" target=\"_blank\" title=\"Opens in a new window\">Make it Mount Pleasant</a> is a handmade and vintage market and afternoon of live entertainment and kids activities. 12:00-6:00 p.m.</p> <button onclick=\"afterlocation(3)\">Show Location</button>",
-            "marker-symbol": "star",
-            "marker-size":"large",
-            "marker-color":"#faaf34"
-            },
-            "geometry":{
-            "type":"Point",
-            "coordinates":[lat[3],long[3]]
-            }
-            
-            }
-            ]
-            };
-            /*
-            for(var i=0;i<3;i++)
+                setTimeout(function(){
+                $('#start').addClass("animated fadeOutUp").delay(2000);
+                $('#start').hide();
+                $('#data-section').show();
+                $('#data-section').addClass("animated fadeInDown");
+                var lat=[37.7749,48.8566,37.3861,40.7128 ];
+                var long=[122.4194,2.3532,122.0839,74.0059 ];
+
+                mapboxgl.accessToken = 'pk.eyJ1Ijoibml0aW4xMjMiLCJhIjoiNTMwZmUzNTQ1NzRkYmY4OTE1MjJkOTNhNmRlMGE4ZDYifQ.IYlLXR8kgPwt137K_x7Nzg';
+                var markers = {
+                "type":"FeatureCollection",
+                "features":[
+                {
+                "type":"Feature",
+                "properties": {
+                "description": "<div class=\"marker-title\">Make it Mount Pleasant</div><p><a href=\"http://www.mtpleasantdc.com/makeitmtpleasant\" target=\"_blank\" title=\"Opens in a new window\">Make it Mount Pleasant</a> is a handmade and vintage market and afternoon of live entertainment and kids activities. 12:00-6:00 p.m.</p> <button onclick=\"afterlocation(1)\">Show Location</button>",
+                "marker-symbol": "star",
+                "marker-size":"large",
+                "marker-color":"#faaf34"
+                },
+                "geometry":{
+                "type":"Point",
+                "coordinates":[lat[0],long[0]]
+                }
+
+                },
+                {
+                "type":"Feature",
+                "properties": {
+                "description": "<div class=\"marker-title\">Make it Mount Pleasant</div><p><a href=\"http://www.mtpleasantdc.com/makeitmtpleasant\" target=\"_blank\" title=\"Opens in a new window\">Make it Mount Pleasant</a> is a handmade and vintage market and afternoon of live entertainment and kids activities. 12:00-6:00 p.m.</p>",
+                "marker-symbol": "star",
+                "marker-size":"large",
+                "marker-color":"#faaf34"
+                },
+                "geometry":{
+                "type":"Point",
+                "coordinates":[lat[1],long[1]]
+                }
+                },
+                {
+                "type":"Feature",
+                "geometry":{
+                "type":"Point",
+                "coordinates":[lat[2],long[2]]
+                },
+                "properties": {
+                "description": "<div class=\"marker-title\">Make it Mount Pleasant</div><p><a href=\"http://www.mtpleasantdc.com/makeitmtpleasant\" target=\"_blank\" title=\"Opens in a new window\">Make it Mount Pleasant</a> is a handmade and vintage market and afternoon of live entertainment and kids activities. 12:00-6:00 p.m.</p> <button onclick=\"afterlocation(2)\">Show Location</button>",
+                "marker-symbol": "star",
+                "marker-size":"large",
+                "marker-color":"#faaf34"
+                }
+
+                },
+                {
+                "type":"Feature",
+                "properties": {
+                "description": "<div class=\"marker-title\">Make it Mount Pleasant</div><p><a href=\"http://www.mtpleasantdc.com/makeitmtpleasant\" target=\"_blank\" title=\"Opens in a new window\">Make it Mount Pleasant</a> is a handmade and vintage market and afternoon of live entertainment and kids activities. 12:00-6:00 p.m.</p> <button onclick=\"afterlocation(3)\">Show Location</button>",
+                "marker-symbol": "star",
+                "marker-size":"large",
+                "marker-color":"#faaf34"
+                },
+                "geometry":{
+                "type":"Point",
+                "coordinates":[lat[3],long[3]]
+                }
+
+                }
+                ]
+                };
+                /*
+                for(var i=0;i<3;i++)
             {
             geojson.features.geometry.coordinates.push([lat[i], long[i]]);
             }
             */
-            var map = new mapboxgl.Map({
-            container: 'map',
-            style: 'mapbox://styles/mapbox/light-v8',
-            center: [37, 70],
-            zoom: 1
-            });
-            map.on('load', function () {
-            // Add marker data as a new GeoJSON source.
-            map.addSource("markers", {
-            "type": "geojson",
-            "data": markers
-            });
-            // Add a layer showing the markers.
-            map.addLayer({
-            "id": "markers",
-            "type": "symbol",
-            "source": "markers",
-            "layout": {
-            "icon-image": "{marker-symbol}-15",
-            "icon-allow-overlap": true
-            }
-            });
-            });
-            // When a click event occurs near a marker icon, open a popup at the location of
+                var map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/mapbox/light-v8',
+                center: [37, 70],
+                zoom: 1
+                });
+                map.on('load', function () {
+                // Add marker data as a new GeoJSON source.
+                map.addSource("markers", {
+                "type": "geojson",
+                "data": markers
+                });
+                // Add a layer showing the markers.
+                map.addLayer({
+                "id": "markers",
+                "type": "symbol",
+                "source": "markers",
+                "layout": {
+                "icon-image": "{marker-symbol}-15",
+                "icon-allow-overlap": true
+                }
+                });
+                });
+                // When a click event occurs near a marker icon, open a popup at the location of
             // the feature, with description HTML from its properties.
             map.on('click', function (e) {
             var features = map.queryRenderedFeatures(e.point, { layers: ['markers'] });
@@ -342,31 +362,161 @@
             var features = map.queryRenderedFeatures(e.point, { layers: ['markers'] });
             map.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
             });
-            
-            
-            },3000);
-            
-            
-            
+
+
+
+            },500);
+
+
+
             }// start end
+
+            </script>
+
+<script type="text/javascript">
+
+  var abc;
+
             function afterlocation(val)
             {
+
+
+
+var key='2Y08eKtQIJMBqmxUA4zALAEjkTzznOXt';
+
+var from_city="SEA";
+var to_city=places[val.toString()];
+
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+    if (xmlhttp.readyState==1)
+    {
+        $('.list-group').html('<div class="loader">Loading...</div>');
+    }
+  else if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+    //  $("#json").html(JSON.stringify(xmlhttp.responseText));
+    $('.list-group').html('');
+      abc=JSON.parse(xmlhttp.responseText);
+      //console.log(xmlhttp.responseText);
+    //  console.log(abc);
+    console.log(abc.legs[0].segments[0].departureTime);
+  var count=0;
+
+for(var i=0;i<6;i++)
+{
+
+var an=abc.legs[i].segments[0].airlineName;
+var img=an.toLowerCase();
+img=img.replace(/\s+/, "");
+   $('.list-group').append(
+    '<div href="#" class="list-group-item"><div class="media col-md-3"><figure class="pull-left">'+
+    '<img class="media-object img-rounded img-responsive"  src="https://logo.clearbit.com/'+img+'.com" alt="'+an+'" >'+
+    '</figure></div><div class="col-md-6"><h4 class="list-group-item-heading"> List group heading </h4>'+'<p class="list-group-item-text"><br><h2><b>Airline Name:</b/>'+an+'</h2> <b>departure Time:<b>' + abc.legs[i].segments[0].departureTime + '<br> <b> arrival Time: <b>'  + abc.legs[i].segments[0].arrivalTime +
+    '</p></div><br><div class="col-md-3 text-center"> <b>price:</b><h2> $ ' + abc.offers[i].baseFarePrice.amount + '</h2>'
+    +'<button type="button" class="btn btn-default btn-lg btn-block" data-toggle="collapse" onclick="showdata()"> SELECT</button><div class="stars"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></div><p> Average 4.5 <small> / </small> 5 </p></div></div>');
+
+    };
+
+}
+  }
+ xmlhttp.open("GET","http://terminal2.expedia.com/x/mflights/search?departureAirport=LAX&arrivalAirport=ORD&departureDate=2016-06-22&childTravelerAge=2&apikey=2Y08eKtQIJMBqmxUA4zALAEjkTzznOXt");
+
+xmlhttp.send();
+
+
             $('#myModal').modal("show");
             var x = JSON.parse(JSON.stringify(places));
             console.log(x[val.toString()]);
-            $.post('http://localhost:3700/callout',{place:x[val.toString()]},function(res){
+            /*$.post('http://localhost:3700/callout',{place:x[val.toString()]},function(res){
                 console.log(res);
             });
             $.post('http://localhost:3700/callout',{place:"new york"},function(res){
                 console.log(res);
-            });
+            });*/
+            //var x = JSON.parse(JSON.stringify(places));
+            //console.log(x[val.toString()]);
+          //  $.post('http://localhost:3700/callout',{place:x[val.toString()]},function(res){console.log(res); });
             }
-            function showdata()
+
+ var abc2;
+
+            function showdata(val)
             {
-            //$('#show-data').show("slow");
+
+                $('#myModal').modal("hide");
+
+var key='2Y08eKtQIJMBqmxUA4zALAEjkTzznOXt';
+
+//var from_city="SEA";
+//var to_city=places[val.toString()];
+
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+    if (xmlhttp.readyState==1)
+    {
+        $('.list-group2').html('<div class="loader">Loading...</div>');
+    }
+  else if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+    //  $("#json").html(JSON.stringify(xmlhttp.responseText));
+    $('.list-group2').html('');
+      abc2=JSON.parse(xmlhttp.responseText);
+      //console.log(xmlhttp.responseText);
+    //  console.log(abc);
+   // console.log(abc.legs[0].segments[0].departureTime);
+  var count=0;
+  var hotels = abc2.hotelList;
+for(var i=0;i<6;i++)
+{
+
+var an=hotels[i].name;
+var img=an.toLowerCase();
+img=img.replace(/\s+/, "");
+   $('.list-group2').append(
+    '<div href="#" class="list-group-item"><div class="media col-md-3"><figure class="pull-left">'+
+    '<img class="media-object img-rounded img-responsive"  src="/hotel.png"  width = "90px"height="5px"alt="'+an+'" >'+
+    '</figure></div><div class="col-md-6"><h4 class="list-group-item-heading"> List group heading </h4>'+'<p class="list-group-item-text"><br><h2><b>Hotel Name:</b/>'+an+'</h2> <b>address:<b>' + hotels[i].address + '<br> <b> star rating: <b>'  + hotels[i].hotelStarRating+
+    '</p></div><br><div class="col-md-3 text-center"> <b>price:</b><h2> $ ' + hotels[i].lowRateInfo.averageRate + '</h2>'
+    +'<button type="button" class="btn btn-default btn-lg btn-block" data-toggle="collapse" onclick="showdata()"> SELECT</button><div class="stars"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></div><p> Average 4.5 <small> / </small> 5 </p></div></div>'
+    );
+
+    };
+
+}
+  }
+ xmlhttp.open("GET","http://terminal2.expedia.com/x/mhotels/search?city=SEATTLE&checkInDate=2016-12-01&checkOutDate=2016-12-03&room1=2&apikey=2Y08eKtQIJMBqmxUA4zALAEjkTzznOXt");
+
+xmlhttp.send();
+
+
+            $('#myModal2').modal("show");
+
+            //var x = JSON.parse(JSON.stringify(places));
+            //console.log(x[val.toString()]);
+          //  $.post('http://localhost:3700/callout',{place:x[val.toString()]},function(res){console.log(res); });
+
             }
-            </script>
-            
+
+
+
+</script>
             <!-- Footer -->
             <footer>
                 <div class="container">
