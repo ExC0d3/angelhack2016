@@ -30,7 +30,7 @@ app.post('/location',function(req,res){
 });
 
 app.post('/callout',function(req,res){
-  
+
   res.send('got it');
   var place = req.body.place;
 
@@ -45,7 +45,7 @@ app.post('/callout',function(req,res){
         throw err;
     });
   });
-  } 
+  }
   else if(place==='moutain view'){
     say.speak('moutain view','', 1.0, function(err) {
       if (err) {
@@ -78,7 +78,7 @@ app.post('/callout',function(req,res){
         throw err;
     });
   });
-    
+
   }
 
 });

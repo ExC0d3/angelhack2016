@@ -258,7 +258,7 @@
                 {
                 "type":"Feature",
                 "properties": {
-                "description": "<div class=\"marker-title\">Make it Mount Pleasant</div><p><a href=\"http://www.mtpleasantdc.com/makeitmtpleasant\" target=\"_blank\" title=\"Opens in a new window\">Make it Mount Pleasant</a> is a handmade and vintage market and afternoon of live entertainment and kids activities. 12:00-6:00 p.m.</p> <button onclick=\"afterlocation(1)\">Show Location</button>",
+                "description": " <b>Mountain View</b> is a city located in Santa Clara County, California, United States, named for its views of the Santa Cruz Mountains</p> <button onclick=\"afterlocation(1)\">Search Flights</button>",
                 "marker-symbol": "star",
                 "marker-size":"large",
                 "marker-color":"#faaf34"
@@ -272,7 +272,7 @@
                 {
                 "type":"Feature",
                 "properties": {
-                "description": "<div class=\"marker-title\">Make it Mount Pleasant</div><p><a href=\"http://www.mtpleasantdc.com/makeitmtpleasant\" target=\"_blank\" title=\"Opens in a new window\">Make it Mount Pleasant</a> is a handmade and vintage market and afternoon of live entertainment and kids activities. 12:00-6:00 p.m.</p>",
+                "description": "<div class=\"marker-title\">SAN Francisco</div><p>San Francisco, in northern California, is a city on the tip of a peninsula surrounded by the Pacific Ocean and San Francisco Bay. It's known for its hilly landscape, year-round fog, iconic Golden Gate Bridge, cable cars and colorful Victorian houses. The Financial District's Transamerica Pyramid is its most distinctive skyscraper. In the bay sits Alcatraz Island, site of the notorious former prison.</p><button class=\"btn btn-primary\" onclick=\"afterlocation(2)\">Search Flights</button>",
                 "marker-symbol": "star",
                 "marker-size":"large",
                 "marker-color":"#faaf34"
@@ -289,7 +289,7 @@
                 "coordinates":[lat[2],long[2]]
                 },
                 "properties": {
-                "description": "<div class=\"marker-title\">Make it Mount Pleasant</div><p><a href=\"http://www.mtpleasantdc.com/makeitmtpleasant\" target=\"_blank\" title=\"Opens in a new window\">Make it Mount Pleasant</a> is a handmade and vintage market and afternoon of live entertainment and kids activities. 12:00-6:00 p.m.</p> <button onclick=\"afterlocation(2)\">Show Location</button>",
+                "description": "<div class=\"marker-title\">PARIS</div><p>Paris, France's capital, is a major European city and a global center for art, fashion, gastronomy and culture. Its picturesque 19th-century cityscape is crisscrossed by wide boulevards and the River Seine. Beyond such landmarks as the Eiffel Tower and the 12th-century, Gothic Notre-Dame cathedral, the city is known for its cafe culture, and designer boutiques along the Rue du Faubourg Saint-Honoré.</p> <button class=\"btn btn-primary\" onclick=\"afterlocation(3)\">Search Flights</button>",
                 "marker-symbol": "star",
                 "marker-size":"large",
                 "marker-color":"#faaf34"
@@ -299,7 +299,7 @@
                 {
                 "type":"Feature",
                 "properties": {
-                "description": "<div class=\"marker-title\">Make it Mount Pleasant</div><p><a href=\"http://www.mtpleasantdc.com/makeitmtpleasant\" target=\"_blank\" title=\"Opens in a new window\">Make it Mount Pleasant</a> is a handmade and vintage market and afternoon of live entertainment and kids activities. 12:00-6:00 p.m.</p> <button onclick=\"afterlocation(3)\">Show Location</button>",
+              "description": "<div class=\"marker-title\">NEW YORK CITY</div><p>Home to the Empire State Building, Times Square, Statue of Liberty and other iconic sites, New York City is a fast-paced, globally influential center of art, culture, fashion and finance. The city’s 5 boroughs sit where the Hudson River meets the Atlantic Ocean, with the island borough of Manhattan at the “Big Apple's\" core.</p> <button class=\"btn btn-primary\" onclick=\"afterlocation(4)\">Search Flights</button>",
                 "marker-symbol": "star",
                 "marker-size":"large",
                 "marker-color":"#faaf34"
@@ -321,8 +321,8 @@
                 var map = new mapboxgl.Map({
                 container: 'map',
                 style: 'mapbox://styles/mapbox/light-v8',
-                center: [37, 70],
-                zoom: 1
+                center: [-77, 21],
+                zoom: 2
                 });
                 map.on('load', function () {
                 // Add marker data as a new GeoJSON source.
@@ -422,7 +422,7 @@ img=img.replace(/\s+/, "");
     '<img class="media-object img-rounded img-responsive"  src="https://logo.clearbit.com/'+img+'.com" alt="'+an+'" >'+
     '</figure></div><div class="col-md-6"><h4 class="list-group-item-heading"> List group heading </h4>'+'<p class="list-group-item-text"><br><h2><b>Airline Name:</b/>'+an+'</h2> <b>departure Time:<b>' + abc.legs[i].segments[0].departureTime + '<br> <b> arrival Time: <b>'  + abc.legs[i].segments[0].arrivalTime +
     '</p></div><br><div class="col-md-3 text-center"> <b>price:</b><h2> $ ' + abc.offers[i].baseFarePrice.amount + '</h2>'
-    +'<button type="button" class="btn btn-default btn-lg btn-block" data-toggle="collapse" onclick="showdata()"> SELECT</button><div class="stars"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></div><p> Average 4.5 <small> / </small> 5 </p></div></div>');
+    +'<button class=\"btn btn-primary\" type="button" class="btn btn-default btn-lg btn-block" data-toggle="collapse" onclick="showdata()"> SELECT</button><div class="stars"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></div><p> Average 4.5 <small> / </small> 5 </p></div></div>');
 
     };
 
@@ -436,15 +436,15 @@ xmlhttp.send();
             $('#myModal').modal("show");
             var x = JSON.parse(JSON.stringify(places));
             console.log(x[val.toString()]);
-            /*$.post('http://localhost:3700/callout',{place:x[val.toString()]},function(res){
+            $.post('http://localhost:3700/callout',{place:x[val.toString()]},function(res){
                 console.log(res);
             });
             $.post('http://localhost:3700/callout',{place:"new york"},function(res){
                 console.log(res);
-            });*/
-            //var x = JSON.parse(JSON.stringify(places));
-            //console.log(x[val.toString()]);
-          //  $.post('http://localhost:3700/callout',{place:x[val.toString()]},function(res){console.log(res); });
+            });
+            var x = JSON.parse(JSON.stringify(places));
+            console.log(x[val.toString()]);
+            $.post('http://localhost:3700/callout',{place:x[val.toString()]},function(res){console.log(res); });
             }
 
  var abc2;
@@ -494,7 +494,7 @@ img=img.replace(/\s+/, "");
     '<img class="media-object img-rounded img-responsive"  src="/hotel.png"  width = "90px"height="5px"alt="'+an+'" >'+
     '</figure></div><div class="col-md-6"><h4 class="list-group-item-heading"> List group heading </h4>'+'<p class="list-group-item-text"><br><h2><b>Hotel Name:</b/>'+an+'</h2> <b>address:<b>' + hotels[i].address + '<br> <b> star rating: <b>'  + hotels[i].hotelStarRating+
     '</p></div><br><div class="col-md-3 text-center"> <b>price:</b><h2> $ ' + hotels[i].lowRateInfo.averageRate + '</h2>'
-    +'<button type="button" class="btn btn-default btn-lg btn-block" data-toggle="collapse" onclick="showdata()"> SELECT</button><div class="stars"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></div><p> Average 4.5 <small> / </small> 5 </p></div></div>'
+    +'<button class=\"btn btn-primary\" type="button" class="btn btn-default btn-lg btn-block" data-toggle="collapse" onclick="showdata()"> SELECT</button><div class="stars"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></div><p> Average 4.5 <small> / </small> 5 </p></div></div>'
     );
 
     };
@@ -510,44 +510,13 @@ xmlhttp.send();
 
             //var x = JSON.parse(JSON.stringify(places));
             //console.log(x[val.toString()]);
-          //  $.post('http://localhost:3700/callout',{place:x[val.toString()]},function(res){console.log(res); });
+           $.post('http://localhost:3700/callout',{place:x[val.toString()]},function(res){console.log(res); });
 
             }
 
 
 
 </script>
-            <!-- Footer -->
-            <footer>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-10 col-lg-offset-1 text-center">
-                            <h4><strong>Start Bootstrap</strong>
-                            </h4>
-                            <p>3481 Melrose Place<br>Beverly Hills, CA 90210</p>
-                            <ul class="list-unstyled">
-                                <li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>
-                                <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:name@example.com">name@example.com</a>
-                            </li>
-                        </ul>
-                        <br>
-                        <ul class="list-inline">
-                            <li>
-                                <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
-                            </li>
-                        </ul>
-                        <hr class="small">
-                        <p class="text-muted">Copyright &copy; Your Website 2014</p>
-                    </div>
-                </div>
-            </div>
-        </footer>
         <script src="jquery-2.2.1.js"></script>
         <!-- Bootstrap Core JavaScript -->
         <script src="bootstrap.min.js"></script>
