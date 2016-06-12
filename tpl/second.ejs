@@ -248,9 +248,9 @@
                 $('#start').hide();
                 $('#data-section').show();
                 $('#data-section').addClass("animated fadeInDown");
-                var lat=[37.7749,48.8566,37.3861,40.7128 ];
-                var long=[122.4194,2.3532,122.0839,74.0059 ];
-
+                var long=[37.7749,50.8566,37.3861,40.7128 ];
+                var lat=[-122.4194,2.3532,-122.0839,-74.0059 ];
+                console.log(lat[0]);
                 mapboxgl.accessToken = 'pk.eyJ1Ijoibml0aW4xMjMiLCJhIjoiNTMwZmUzNTQ1NzRkYmY4OTE1MjJkOTNhNmRlMGE4ZDYifQ.IYlLXR8kgPwt137K_x7Nzg';
                 var markers = {
                 "type":"FeatureCollection",
