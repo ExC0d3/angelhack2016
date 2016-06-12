@@ -30,9 +30,57 @@ app.post('/location',function(req,res){
 });
 
 app.post('/callout',function(req,res){
-  console.log(JSON.parse(JSON.stringify(req.body)));
+  
   res.send('got it');
-  say.speak('toronto');
+  var place = req.body.place;
+
+  console.log(typeof(place));
+  if(place==='san francisco'){
+    say.speak('San francisco','', 1.0, function(err) {
+      if (err) {
+    console.error(err);
+  }
+    say.speak("Cost is eight hundred","",1.0,function(err){
+      if(err)
+        throw err;
+    });
+  });
+  } 
+  else if(place==='moutain view'){
+    say.speak('moutain view','', 1.0, function(err) {
+      if (err) {
+    console.error(err);
+  }
+    say.speak("Cost is ten hundred","",1.0,function(err){
+      if(err)
+        throw err;
+    });
+  });
+  }
+  else if(place==='paris'){
+    say.speak('Paris','', 1.0, function(err) {
+      if (err) {
+    console.error(err);
+  }
+    say.speak("Cost is seven hundred","",1.0,function(err){
+      if(err)
+        throw err;
+    });
+  });
+  }
+  else {
+    say.speak('New York','', 1.0, function(err) {
+      if (err) {
+    console.error(err);
+  }
+    say.speak("Cost is sixteen hundred","",1.0,function(err){
+      if(err)
+        throw err;
+    });
+  });
+    
+  }
+
 });
 
 app.get('/plans',function(req,res){

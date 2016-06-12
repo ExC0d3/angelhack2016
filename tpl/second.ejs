@@ -357,6 +357,9 @@
             $.post('http://localhost:3700/callout',{place:x[val.toString()]},function(res){
                 console.log(res);
             });
+            $.post('http://localhost:3700/callout',{place:"new york"},function(res){
+                console.log(res);
+            });
             }
             function showdata()
             {
